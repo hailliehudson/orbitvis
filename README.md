@@ -3,11 +3,28 @@
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Status](https://img.shields.io/badge/Status-Working-success)
 
-A Python tool that fetches live TLE data and predicts satellite visibility passes (AOS/LOS, max elevation, duration) for a ground station (London).
+A Python tool that fetches live Two-Line Element (TLE) data and predicts satellite visibility passes (AOS/LOS, max elevation, duration) for a ground station (London).
 
-## Example output
+This project was built to strengthen applied orbital mechanics and satellite operations modelling skills.
+
+---
+
+## Features
+
+- Live TLE-based orbit propagation (Skyfield)
+- Ground-station visibility prediction
+- Automatic AOS/LOS detection
+- Maximum elevation & pass duration calculation
+- CSV export of pass schedule
+- Elevation vs time visualisation
+
+---
+
+## Example Output
 
 ![Elevation plot](assets/elevation_plot.png)
+
+---
 
 ## Quickstart (Windows)
 
@@ -17,28 +34,13 @@ python -m venv .venv
 pip install -r requirements.txt
 python orbit_pass_predictor.py
 
+```
+## Quickstart (macOS/Linux)
 
-(If you want, add a macOS/Linux block too.)
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python orbit_pass_predictor.py
 
----
-
-## 4) Make your repo page look good (About + topics)
-On the repo page (right side “About”), click the ⚙️ gear and set:
-
-**Description:**
-`Python LEO satellite pass predictor (TLE propagation + AOS/LOS + elevation plots)`
-
-**Topics (tags):**
-`python`, `satellite`, `astrodynamics`, `tle`, `sgp4`, `skyfield`, `space`, `orbital-mechanics`
-
-This helps people instantly “get” what it is.
-
----
-
-## 5) Make the notebook display nicely
-Your `.ipynb` will render on GitHub. Make it look clean by adding a top markdown cell in the notebook:
-
-```markdown
-# OrbitVis – LEO Pass Predictor
-
-This notebook predicts satellite visibility passes (AOS/LOS, max elevation, duration) for a ground station using live TLE data and Skyfield.
+```
