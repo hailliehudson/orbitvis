@@ -1,4 +1,7 @@
 .venv/
+.ipynb_checkpoints/
 __pycache__/
 *.pyc
 passes.csv
+Figure_*.png
+stations.txt
