@@ -5,3 +5,4 @@ __pycache__/
 passes.csv
 Figure_*.png
 stations.txt
+.ipynb_checkpoints/
